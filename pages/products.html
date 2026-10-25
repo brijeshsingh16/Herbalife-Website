@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="../photo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../photo/favicon-32.png">
+<link rel="apple-touch-icon" href="../photo/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/product.css">
+<title>Products | Herbalife</title>
+</head>
+<body class="products-page" data-base="../">
+<header class="site-header" id="siteHeader">
+  <div class="container navbar">
+    <a class="brand" href="../index.html" data-top aria-label="Herbalife, back to top"><img src="../photo/logo.svg" alt="" width="38" height="38"><span>HERBALIFE</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home" data-section="home">Home</a></li>
+      <li><a href="../index.html#popular" data-section="popular">Popular</a></li>
+      <li><a href="../index.html#about" data-section="about">About</a></li>
+      <li><a href="../index.html#testimonials" data-section="testimonials">Reviews</a></li>
+      <li><a href="../index.html#contact" data-section="contact">Contact</a></li>
+      <li><a class="nav-cta active" href="products.html">Products</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="pw-mobile-bar">
+  <button type="button" class="drawer-btn" id="openDrawerBtn"><i class="fa-solid fa-bars"></i> All products</button>
+  <span class="mobile-current" id="mobileCurrent">Products</span>
+</div>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<div class="pw">
+  <!-- Products navigation: categories on the left -->
+  <aside class="sidebar" id="productSidebar" aria-label="Product categories">
+    <div class="sidebar-header"><span>Total products</span><b id="productCount">0</b></div>
+    <nav class="sidebar-content" id="categoryList"></nav>
+  </aside>
+
+  <!-- Product image and details on the right -->
+  <section class="pw-main">
+    <div class="pw-topbar">
+      <div class="crumbs"><a href="products.html">Products</a><i class="fa-solid fa-chevron-right"></i><span id="crumbCategory"></span><i class="fa-solid fa-chevron-right"></i><b id="crumbProduct"></b></div>
+      <a class="btn outline small" id="enquireTop" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+    </div>
+    <div class="detail-scroll" id="detailScroll"><div class="detail-inner" id="productDetail"></div></div>
+  </section>
+</div>
+
+<script src="../js/products-data.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/product.js"></script>
+</body>
+</html>
